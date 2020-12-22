@@ -55,13 +55,13 @@ NCTU Dlab 2020 final project
 * **請在push之前先pull**
 
 以下是下載步驟：\
-先cd到檔案所在資料夾
+先cd到檔案所在資料夾內
 ```
 git clone "https://github.com/scott306lr/dlab_pikachu_volleyball.git"
 ```
 
 以下是上傳步驟：\
-先cd到檔案所在資料夾
+先cd到檔案所在資料夾內
 ```
 git pull
 git add .
