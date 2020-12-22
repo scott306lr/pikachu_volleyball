@@ -51,6 +51,8 @@ NCTU Dlab 2020 final project
 * etc...
 
 ## 注意事項
+* **請勿隨意更動其它資料夾內容，以防conflict**
+* **請在push之前先pull**
 
 以下是下載步驟：\
 先cd到檔案所在資料夾
@@ -66,8 +68,6 @@ git add .
 git commit -m "這裡請輸入做了什麼更動"
 git push
 ```
-* 請勿隨意更動其它資料夾內容，以防conflict
-* 請在push之前先pull
 
 ### 究竟能不能在時限內做完呢？ 讓我們繼續看下去......
 
