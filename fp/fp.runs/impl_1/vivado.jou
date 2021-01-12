@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:20 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Tue Jan 12 21:41:48 2021
+# Process ID: 8184
+# Current directory: C:/Users/scott/Desktop/fp/fp.runs/impl_1
+# Command line: vivado.exe -log lab10.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab10.tcl -notrace
+# Log file: C:/Users/scott/Desktop/fp/fp.runs/impl_1/lab10.vdi
+# Journal file: C:/Users/scott/Desktop/fp/fp.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab10.tcl -notrace

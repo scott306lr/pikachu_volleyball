@@ -1,0 +1,204 @@
+/*
+
+Xilinx Vivado v2020.1.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2960000 on Wed Aug  5 22:57:20 MDT 2020
+IP Build: 2956692 on Thu Aug  6 01:41:30 MDT 2020
+
+Process ID (PID): 6844
+License: Customer
+
+Current time: 	Tue Jan 12 21:39:28 CST 2021
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	scott
+User home directory: C:/Users/scott
+User working directory: C:/Users/scott/Desktop/fp
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/scott/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/scott/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/scott/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/scott/Desktop/fp/vivado.log
+Vivado journal file location: 	C:/Users/scott/Desktop/fp/vivado.jou
+Engine tmp dir: 	C:/Users/scott/Desktop/fp/.Xil/Vivado-6844-LRdesktop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 996 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\scott\Desktop\fp\fp.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/scott/Desktop/fp/fp.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/scott/Desktop/fp/fp.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Shlab17/Desktop/fp' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 121 MB (+124048kb) [00:00:09]
+// [Engine Memory]: 996 MB (+892492kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2551 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 996 MB. GUI used memory: 57 MB. Current time: 1/12/21, 9:39:28 PM CST
+// Project name: fp; location: C:/Users/scott/Desktop/fp; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab10 (lab10.v), vs0 : vga_sync (vga_sync.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("lab10.v", 738, 239); // bP (w, cs)
+selectCodeEditor("lab10.v", 983, 240); // bP (w, cs)
+selectCodeEditor("lab10.v", 1028, 238); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 131 MB (+4237kb) [00:00:58]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cs)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 138 MB (+366kb) [00:01:07]
+// Tcl Message: [Tue Jan 12 21:40:24 2021] Launched synth_1... Run output will be captured here: C:/Users/scott/Desktop/fp/fp.runs/synth_1/runme.log [Tue Jan 12 21:40:24 2021] Launched impl_1... Run output will be captured here: C:/Users/scott/Desktop/fp/fp.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Completed: addNotify
+// Elapsed time: 826 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,091 MB. GUI used memory: 78 MB. Current time: 1/12/21, 9:54:18 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,679 MB (+663866kb) [00:15:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,680 MB. GUI used memory: 78 MB. Current time: 1/12/21, 9:54:31 PM CST
+// [Engine Memory]: 1,793 MB (+32274kb) [00:15:14]
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 149 MB (+4474kb) [00:15:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35ticsg324-1L 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1053.656 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2420 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1785.664 ; gain = 3.664 
+// Tcl Message: Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1785.664 ; gain = 3.664 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1785.664 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1845 instances were transformed.   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 4 instances   RAM16X1S => RAM32X1S (RAMS32): 8 instances   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1829 instances   RAM32X1S => RAM32X1S (RAMS32): 4 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1958.109 ; gain = 943.441 
+// Tcl Message: INFO: [Common 17-14] Message 'Designutils 20-2384' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 157 MB (+967kb) [00:15:17]
+// [GUI Memory]: 166 MB (+644kb) [00:15:17]
+// [Engine Memory]: 1,902 MB (+20303kb) [00:15:17]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 3.1s
+// Device view-level: 0.0
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 175 MB (+985kb) [00:15:19]
+// [GUI Memory]: 184 MB (+174kb) [00:15:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  2747 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dZ' command handler elapsed time: 26 seconds
+// V (cs): Critical Messages: addNotify
+// Elapsed time: 27 seconds
+dismissDialog("Open Implemented Design"); // bz (cs)
+// [Engine Memory]: 2,007 MB (+9515kb) [00:15:22]
+// [GUI Memory]: 200 MB (+7025kb) [00:16:46]

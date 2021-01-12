@@ -1,0 +1,506 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:20 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Tue Jan 12 21:40:26 2021
+# Process ID: 26364
+# Current directory: C:/Users/scott/Desktop/fp/fp.runs/synth_1
+# Command line: vivado.exe -log lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10.tcl
+# Log file: C:/Users/scott/Desktop/fp/fp.runs/synth_1/lab10.vds
+# Journal file: C:/Users/scott/Desktop/fp/fp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab10.tcl -notrace
+Command: synth_design -top lab10 -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6648
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab10' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/lab10.v:23]
+	Parameter PHY_CLK bound to: 25000000 - type: integer 
+	Parameter beach_W bound to: 320 - type: integer 
+	Parameter beach_H bound to: 240 - type: integer 
+	Parameter player_W bound to: 64 - type: integer 
+	Parameter player_H bound to: 64 - type: integer 
+	Parameter ball_W bound to: 40 - type: integer 
+	Parameter ball_H bound to: 40 - type: integer 
+	Parameter options_W bound to: 100 - type: integer 
+	Parameter options_H bound to: 30 - type: integer 
+	Parameter score_W bound to: 21 - type: integer 
+	Parameter score_H bound to: 27 - type: integer 
+	Parameter announce_W bound to: 100 - type: integer 
+	Parameter announce_H bound to: 30 - type: integer 
+	Parameter instruct_W bound to: 200 - type: integer 
+	Parameter instruct_H bound to: 30 - type: integer 
+	Parameter net_W bound to: 5 - type: integer 
+	Parameter net_H bound to: 80 - type: integer 
+	Parameter START_SCENE bound to: 3'b000 
+	Parameter SKIN_SCENE bound to: 3'b001 
+	Parameter GAME_START_SCENE bound to: 3'b010 
+	Parameter READY_SCENE bound to: 3'b011 
+	Parameter GAME_SCENE bound to: 3'b100 
+	Parameter GAME_SET bound to: 3'b101 
+	Parameter PLAYER_WIN bound to: 3'b110 
+	Parameter PLAYER_LOSE bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/vga_sync.v:19]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (1#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/vga_sync.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/clk_divider.v:21]
+	Parameter divider bound to: 2 - type: integer 
+	Parameter half_divider bound to: 1 - type: integer 
+	Parameter divider_minus_one bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (2#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/clk_divider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/debounce.v:21]
+	Parameter DEBOUNCE_PERIOD bound to: 2000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sram_sea' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_sea.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 76800 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'beach.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_sea.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_sea' (4#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_sea.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_player' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_pika_player.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'pokemon.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_pika_player.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_player' (5#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_pika_player.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_ball' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_ball.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 6400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ball.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_ball.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_ball' (6#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_ball.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_options' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_options.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 12000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'button.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_options.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_options' (7#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_options.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_score' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_score.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 5670 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'score.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_score.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_score' (8#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_score.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_announce' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_announce.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 15000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'announce.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_announce.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_announce' (9#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_announce.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram_instruct' [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_instruct.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 24000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'instruct.mem' is read successfully [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_instruct.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram_instruct' (10#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/sram_instruct.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lab10' (11#1) [C:/Users/scott/Desktop/fp/fp.srcs/sources_1/lab10.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1013.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Desktop/fp/fp.srcs/constrs_1/lab10.xdc]
+Finished Parsing XDC File [C:/Users/scott/Desktop/fp/fp.srcs/constrs_1/lab10.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/scott/Desktop/fp/fp.srcs/constrs_1/lab10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1015.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1015.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.316 ; gain = 1.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.316 ; gain = 1.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.316 ; gain = 1.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.316 ; gain = 1.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 7     
+	   2 Input   32 Bit       Adders := 28    
+	   3 Input   32 Bit       Adders := 6     
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 3     
+	   3 Input   18 Bit       Adders := 2     
+	   3 Input   14 Bit       Adders := 6     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 7     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 7     
+	               32 Bit    Registers := 4     
+	               31 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               18 Bit    Registers := 8     
+	               12 Bit    Registers := 8     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	             900K Bit	(76800 X 12 bit)          RAMs := 1     
+	             192K Bit	(16384 X 12 bit)          RAMs := 1     
+	              75K Bit	(6400 X 12 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 16    
+	   3 Input   33 Bit        Muxes := 3     
+	   6 Input   33 Bit        Muxes := 1     
+	   5 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 9     
+	   4 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 9     
+	   3 Input   31 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 1     
+	   3 Input   27 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   5 Input   18 Bit        Muxes := 5     
+	   2 Input   18 Bit        Muxes := 6     
+	  11 Input   18 Bit        Muxes := 2     
+	   6 Input   18 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 40    
+	   3 Input   12 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   2 Input    3 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 11    
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP ball_loc2, operation Mode is: A*(B:0x28).
+DSP Report: operator ball_loc2 is absorbed into DSP ball_loc2.
+DSP Report: Generating DSP ball_loc_reg, operation Mode is: (PCIN+(A:0x0):B+C)'.
+DSP Report: register ball_loc_reg is absorbed into DSP ball_loc_reg.
+DSP Report: operator ball_loc0 is absorbed into DSP ball_loc_reg.
+DSP Report: Generating DSP p_8_in, operation Mode is: A*(B:0x64).
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: Generating DSP announce_loc_reg[1], operation Mode is: (PCIN+(A:0x0):B+C)'.
+DSP Report: register announce_loc_reg[1] is absorbed into DSP announce_loc_reg[1].
+DSP Report: operator p_11_out is absorbed into DSP announce_loc_reg[1].
+DSP Report: Generating DSP p_4_in, operation Mode is: A*(B:0xc8).
+DSP Report: operator p_4_in is absorbed into DSP p_4_in.
+DSP Report: Generating DSP instruct_loc_reg[1], operation Mode is: (PCIN+(A:0x0):B+C)'.
+DSP Report: register instruct_loc_reg[1] is absorbed into DSP instruct_loc_reg[1].
+DSP Report: operator p_7_out is absorbed into DSP instruct_loc_reg[1].
+DSP Report: Generating DSP p_24_in, operation Mode is: A*(B:0x15).
+DSP Report: operator p_24_in is absorbed into DSP p_24_in.
+DSP Report: Generating DSP options_skin_loc2, operation Mode is: A*(B:0x64).
+DSP Report: operator options_skin_loc2 is absorbed into DSP options_skin_loc2.
+DSP Report: Generating DSP options_skin_loc_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xbb8).
+DSP Report: register options_skin_loc_reg is absorbed into DSP options_skin_loc_reg.
+DSP Report: operator options_skin_loc0 is absorbed into DSP options_skin_loc_reg.
+DSP Report: Generating DSP options_start_loc_reg, operation Mode is: C+A*(B:0x64).
+DSP Report: register options_start_loc_reg is absorbed into DSP options_start_loc_reg.
+DSP Report: operator options_start_loc0 is absorbed into DSP options_start_loc_reg.
+DSP Report: operator options_start_loc1 is absorbed into DSP options_start_loc_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1015.316 ; gain = 1.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|lab10       | s_player/RAM_reg | 16 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 6      | 
+|lab10       | s_ball/RAM_reg   | 6 K x 12(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 3      | 
+|lab10       | s_sea/RAM_reg    | 75 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 36     | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+|Module Name | RTL Object         | Inference      | Size (Depth x Width) | Primitives                                                  | 
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+|lab10       | s_announce/RAM_reg | User Attribute | 16 K x 12            | RAM16X1S x 24	RAM128X1S x 12	RAM256X1S x 696	               | 
+|lab10       | s_instruct/RAM_reg | User Attribute | 32 K x 12            | RAM64X1S x 12	RAM128X1S x 12	RAM256X1S x 1116	              | 
+|lab10       | s_score/RAM_reg    | User Attribute | 8 K x 12             | RAM16X1S x 12	RAM32X1S x 12	RAM256X1S x 264	                | 
+|lab10       | s_opt/RAM_reg      | User Attribute | 16 K x 12            | RAM32X1S x 12	RAM64X1S x 12	RAM128X1S x 12	RAM256X1S x 552	 | 
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lab10       | A*(B:0x28)               | 18     | 6      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | (PCIN+(A:0x0):B+C)'      | 30     | 18     | 13     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|lab10       | A*(B:0x64)               | 18     | 7      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | (PCIN+(A:0x0):B+C)'      | 30     | 18     | 14     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|lab10       | A*(B:0xc8)               | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | (PCIN+(A:0x0):B+C)'      | 30     | 18     | 15     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|lab10       | A*(B:0x15)               | 18     | 5      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*(B:0x64)               | 18     | 7      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+(A:0x0):B+(C:0xbb8) | 30     | 18     | 12     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|lab10       | C+A*(B:0x64)             | 18     | 7      | 18     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1089.574 ; gain = 75.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1275.719 ; gain = 261.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|lab10       | s_player/RAM_reg | 16 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 6      | 
+|lab10       | s_ball/RAM_reg   | 6 K x 12(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 3      | 
+|lab10       | s_sea/RAM_reg    | 75 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 36     | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+|Module Name | RTL Object         | Inference      | Size (Depth x Width) | Primitives                                                  | 
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+|lab10       | s_announce/RAM_reg | User Attribute | 16 K x 12            | RAM16X1S x 24	RAM128X1S x 12	RAM256X1S x 696	               | 
+|lab10       | s_instruct/RAM_reg | User Attribute | 32 K x 12            | RAM64X1S x 12	RAM128X1S x 12	RAM256X1S x 1116	              | 
+|lab10       | s_score/RAM_reg    | User Attribute | 8 K x 12             | RAM16X1S x 12	RAM32X1S x 12	RAM256X1S x 264	                | 
+|lab10       | s_opt/RAM_reg      | User Attribute | 16 K x 12            | RAM32X1S x 12	RAM64X1S x 12	RAM128X1S x 12	RAM256X1S x 552	 | 
++------------+--------------------+----------------+----------------------+-------------------------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_player/RAM_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_ball/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_ball/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_ball/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance s_sea/RAM_reg_1_11__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   332|
+|3     |DSP48E1   |    10|
+|6     |LUT1      |   224|
+|7     |LUT2      |   604|
+|8     |LUT3      |   306|
+|9     |LUT4      |   516|
+|10    |LUT5      |   308|
+|11    |LUT6      |   902|
+|12    |MUXF7     |   170|
+|13    |MUXF8     |    18|
+|14    |RAM128X1S |     4|
+|15    |RAM16X1S  |     8|
+|16    |RAM256X1S |  1829|
+|17    |RAM32X1S  |     4|
+|18    |RAMB36E1  |    45|
+|63    |FDRE      |   803|
+|64    |FDSE      |    46|
+|65    |IBUF      |     7|
+|66    |OBUF      |    15|
+|67    |OBUFT     |     3|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1285.652 ; gain = 271.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1285.652 ; gain = 270.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1285.652 ; gain = 271.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1285.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2420 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1285.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1845 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1829 instances
+  RAM32X1S => RAM32X1S (RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1285.652 ; gain = 271.930
+INFO: [Common 17-1381] The checkpoint 'C:/Users/scott/Desktop/fp/fp.runs/synth_1/lab10.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab10_utilization_synth.rpt -pb lab10_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 21:41:41 2021...

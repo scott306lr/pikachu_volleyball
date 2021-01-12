@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:20 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Tue Jan 12 21:39:07 2021
+# Process ID: 6844
+# Current directory: C:/Users/scott/Desktop/fp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28152 C:\Users\scott\Desktop\fp\fp.xpr
+# Log file: C:/Users/scott/Desktop/fp/vivado.log
+# Journal file: C:/Users/scott/Desktop/fp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/scott/Desktop/fp/fp.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Shlab17/Desktop/fp' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Jan 12 21:40:24 2021] Launched synth_1...
+Run output will be captured here: C:/Users/scott/Desktop/fp/fp.runs/synth_1/runme.log
+[Tue Jan 12 21:40:24 2021] Launched impl_1...
+Run output will be captured here: C:/Users/scott/Desktop/fp/fp.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1053.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2420 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1785.664 ; gain = 3.664
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1785.664 ; gain = 3.664
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1785.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1845 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1829 instances
+  RAM32X1S => RAM32X1S (RAMS32): 4 instances
+
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1958.109 ; gain = 943.441
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+CRITICAL WARNING: [Designutils 20-2384] Using a dirty HDPYRoutedSite for site SLICE_X38Y44 from the HDPYRoutedSiteCache
+INFO: [Common 17-14] Message 'Designutils 20-2384' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

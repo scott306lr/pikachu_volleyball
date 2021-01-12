@@ -1,0 +1,118 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1.1 (win64) Build 2960000 Wed Aug  5 22:57:20 MDT 2020
+| Date         : Tue Jan 12 21:43:47 2021
+| Host         : LRdesktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   142 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     5 |
+| >= 16              |    21 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              77 |           62 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             451 |          158 |
+| Yes          | No                    | No                     |              44 |           25 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             278 |          103 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------+----------------------------+------------------+----------------+--------------+
+|    Clock Signal   |        Enable Signal        |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-----------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_divider0/CLK |                             |                            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG    | player_y_v[1]_i_2_n_0       | btn_db3/SR[0]              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG    | ai_y_v[1]_i_2_n_0           | ai_y_v[1]_i_1_n_0          |                1 |              1 |         1.00 |
+|  clk_divider0/CLK |                             | vs0/ball_player_cd3        |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG    | p_61_in                     | last_score0                |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | ball_y_clock[29]            |                            |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG    | ball_x_clock[29]            |                            |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG    | cpu_score__0                | last_score0                |                3 |              8 |         2.67 |
+|  clk_divider0/CLK | vs0/pixel_tick              | vs0/h_count_reg[9]_i_1_n_0 |                5 |             10 |         2.00 |
+|  clk_divider0/CLK | vs0/v_count_reg[9]_i_2_n_0  | vs0/v_count_reg[9]_i_1_n_0 |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG    |                             | vs0/options_skin_loc_reg_7 |                9 |             11 |         1.22 |
+|  clk_IBUF_BUFG    | vs0/pixel_tick              | vs0/SR[0]                  |                9 |             12 |         1.33 |
+|  clk_IBUF_BUFG    | vs0/h_count_reg_reg[3]_1[0] | vs0/ball_player_cd3        |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG    | vs0/h_count_reg_reg[9]_3[0] | vs0/ball_player_cd3        |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG    | p_55_in                     | vs0/ball_player_cd3        |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG    | p_54_in                     | vs0/ball_player_cd3        |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG    | vs0/E[0]                    | vs0/ball_player_cd3        |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG    | vs0/skin_region[2]          | vs0/ball_player_cd3        |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG    | vs0/skin_region[1]          | vs0/ball_player_cd3        |                8 |             14 |         1.75 |
+|  clk_IBUF_BUFG    |                             | ball_player_cd[22]_i_1_n_0 |                7 |             20 |         2.86 |
+|  clk_IBUF_BUFG    |                             | player_y_clock[26]_i_1_n_0 |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG    |                             | ai_y_clock[26]_i_1_n_0     |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG    |                             | btn_db3/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                             | btn_db2/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                             | btn_db1/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                             | btn_db0/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    | ball_x_clock[29]            | ball_x_clock[31]_i_1_n_0   |                5 |             22 |         4.40 |
+|  clk_IBUF_BUFG    | ball_y_clock[29]            | ball_y_clock[31]_i_1_n_0   |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG    |                             | player_x_clock[31]_i_1_n_0 |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG    |                             | player_phy_clk[27]_i_1_n_0 |                6 |             28 |         4.67 |
+|  clk_IBUF_BUFG    |                             | ai_x_clock[31]_i_1_n_0     |                9 |             28 |         3.11 |
+|  clk_IBUF_BUFG    |                             | ai_phy_clk[27]_i_1_n_0     |                9 |             28 |         3.11 |
+|  clk_IBUF_BUFG    | ball_x_v[31]_i_2_n_0        | ball_x_v0_in[31]           |                9 |             29 |         3.22 |
+|  clk_IBUF_BUFG    | ai_y_v[31]_i_1_n_0          | ball_player_cd1            |                8 |             30 |         3.75 |
+|  clk_IBUF_BUFG    | btn_db3/E[0]                | ball_player_cd1            |                8 |             30 |         3.75 |
+|  ball_y_v0_BUFG   | ball_y_v[31]_i_1_n_0        |                            |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG    |                             | pause_clk0                 |                8 |             33 |         4.13 |
+|  clk_IBUF_BUFG    |                             | ball_player_cd1            |               29 |             63 |         2.17 |
+|  clk_IBUF_BUFG    |                             | vs0/ball_player_cd3        |               37 |             82 |         2.22 |
+|  clk_IBUF_BUFG    |                             |                            |             1901 |           7412 |         3.90 |
++-------------------+-----------------------------+----------------------------+------------------+----------------+--------------+
+
+
