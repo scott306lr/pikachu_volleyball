@@ -1,7 +1,15 @@
 # dlab_pikachu_volleyball
 NCTU Dlab 2020 final project
 
+### 成品
 
+* 可操控皮卡丘與CPU打排球, 先得到5分者獲勝
+* 選單畫面可以更換皮卡丘造型
+* 可以用開關切換顯示按鍵提示
+* CPU會跳殺(怕)
+* 殺球時球會變色
+
+------------------------------------
 ## 以下是分工流程
 
 ### 操控
@@ -49,27 +57,6 @@ NCTU Dlab 2020 final project
 
 * 指令輸入
 * etc...
-
-## 注意事項
-* **請勿隨意更動其它資料夾內容，以防conflict**
-* **請在push之前先pull**
-
-以下是下載步驟：\
-先cd到檔案所在資料夾內
-```
-git clone "https://github.com/scott306lr/dlab_pikachu_volleyball.git"
-```
-
-以下是上傳步驟：\
-先cd到檔案所在資料夾內
-```
-git pull
-git add .
-git commit -m "這裡請輸入做了什麼更動"
-git push
-```
-
-### 究竟能不能在時限內做完呢？ 讓我們繼續看下去......
 
 
 
