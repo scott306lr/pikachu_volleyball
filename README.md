@@ -1,7 +1,7 @@
 # dlab_pikachu_volleyball
 NCTU Dlab 2020 final project
 
-### 成品
+## 成品:
 
 * 可操控皮卡丘與CPU打排球, 先得到5分者獲勝
 * 選單畫面可以更換皮卡丘造型
